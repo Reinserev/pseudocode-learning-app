@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B2E2F99-F7A9-41E7-92D9-1D07A7593B73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pseudocode_Master</RootNamespace>
+    <AssemblyName>Pseudocode Master</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Builder.Designer.cs">
+      <DependentUpon>Builder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class.cs" />
+    <Compile Include="CodeChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeChecker.Designer.cs">
+      <DependentUpon>CodeChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gallery.Designer.cs">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Learning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Learning.Designer.cs">
+      <DependentUpon>Learning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningAttrib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningAttrib.Designer.cs">
+      <DependentUpon>LearningAttrib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningDeclare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningDeclare.Designer.cs">
+      <DependentUpon>LearningDeclare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningDoWhile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningDoWhile.Designer.cs">
+      <DependentUpon>LearningDoWhile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningFor.Designer.cs">
+      <DependentUpon>LearningFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningIf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningIf.Designer.cs">
+      <DependentUpon>LearningIf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningRead.Designer.cs">
+      <DependentUpon>LearningRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningWhile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningWhile.Designer.cs">
+      <DependentUpon>LearningWhile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearningWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningWrite.Designer.cs">
+      <DependentUpon>LearningWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nag.Designer.cs">
+      <DependentUpon>Nag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator.Designer.cs">
+      <DependentUpon>Translator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Builder.resx">
+      <DependentUpon>Builder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeChecker.resx">
+      <DependentUpon>CodeChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gallery.resx">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Learning.resx">
+      <DependentUpon>Learning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningAttrib.resx">
+      <DependentUpon>LearningAttrib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningDeclare.resx">
+      <DependentUpon>LearningDeclare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningDoWhile.resx">
+      <DependentUpon>LearningDoWhile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningFor.resx">
+      <DependentUpon>LearningFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningIf.resx">
+      <DependentUpon>LearningIf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningRead.resx">
+      <DependentUpon>LearningRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningWhile.resx">
+      <DependentUpon>LearningWhile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningWrite.resx">
+      <DependentUpon>LearningWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nag.resx">
+      <DependentUpon>Nag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translator.resx">
+      <DependentUpon>Translator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean-coding-best-practices.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-and-advice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onlineeducation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sc_Stuxnet%27s_Rootkit_%28MRxNet%29_into_C++_2011-2-6_13.54.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\translate-110777_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EN.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OTHER.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cplusplus.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pascal.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Learning Envorinment.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HALP.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree-Alone-Art-White-Wallpaper-Mobile-Free-Download-678292938834.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blinking_exclamation_mark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VC_E.png" />
+    <None Include="Resources\declaration.jpg" />
+    <Content Include="Resources\MI.png" />
+    <None Include="Resources\MI_E.png" />
+    <Content Include="Resources\TR.png" />
+    <None Include="Resources\TR_E.png" />
+    <Content Include="Resources\VC.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

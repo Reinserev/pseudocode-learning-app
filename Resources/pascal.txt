@@ -1,0 +1,18 @@
+read(
+write(
+begin
+end
+integer
+integer
+real
+real
+ =
+ <>
+ DIV
+ MOD
+ AND
+ OR
+ NOT
+ :=
+ repeat
+ until

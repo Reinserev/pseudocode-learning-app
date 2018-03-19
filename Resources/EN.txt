@@ -1,0 +1,122 @@
+read
+write
+declare
+assign
+if
+then
+else
+for
+while
+do
+repeat/until
+endif
+endwhile
+endfor
+
+Welcome to Pseudocode Learning Companion
+Please select an option:
+Translator
+Learning Environment
+Builder
+Code Checker
+Help
+Program made using Visual C# 2015
+Copyright (c) 2015 Catalin Popa
+
+Translate now !
+Check now !
+Select the instruction that you wish to learn 
+General statement: (attention! write only one statement, using the given syntax)
+Show details
+Hide details
+Thank you for using my program. I hope it was helpful and that you now know much more about Pseudocode !
+Open the Gallery
+Next scheme
+Previous scheme
+ATTENTION! Only the syntax given in the Learning Environment is supported.
+
+natural
+integer
+rational
+real
+
+Something seems to be wrong. Pay great attention to the syntax. Review your code and try again!
+That's correct!
+
+Attention !!
+Are you using this program for the first time ?
+Read this carefully or don't bother using this program. It's going to be helpful if and only if you help it by carefully reading the HELP section before getting confused. Understood?
+After you've read the instructions, close the help window and start with the learning environment for now. OK?
+The first line containing errors is:
+
+The TRANSLATOR allows the translation of (correctly written!) pseudocode into a programming language of your choice (C++ or Pascal). Just copy and paste your code (or open a text file) in the left pane and press the TRANSLATE NOW! Button. The translated code will appear in the right pane, which you can later save as a text file.
+The LEARNING ENVIRONMENT allows you to learn the seven pseudocode instructions quickly and easily. Just click the button of the desired instruction it'll show you all you need to know to master it.
+The BUILDER allows you to build a pseudocode program yourself. Just click one of the seven instruction buttons to add the desired instruction to your program (don't worry, it won't let you make any mistakes!).
+The CODE CHECKER allows you to check if your code has been correctly written, and point out any errors you have made. Just copy and paste your code (or open a text file) in the pane, and press the CHECK NOW! Button.
+The HELP section allows you to view the help contents.
+
+<variable_type> <list_of_variables>;
+In order to DECLARE a variable, you need to state its data type (natural, integer, rational or real) and its name. To declare multiple variables with the same type using a single instruction simply separate them using commas (,).
+			Examples: natural a; real c; rational b, d;
+Counter-examples: a natural; b integer d; (they do not respect the general statement and mix up things)
+
+<variable_name> <- <expression>
+In order to ASSIGN a variable, you need to state its name, use the assigning operator (<-) and state what you want to assign it with. The expression that you assign the variable with can, of course, include other variables.
+			Examples: a<-5; b<-a+5; x1<-(a+b)/2;
+Counter-example: a+5<-2; (there is no such thing such as a variable with the name of an expression as you are not allowed to use operands - like + - () etc. in the name of a variable)
+
+read <variable_list>
+In order to READ a variable, you have to use a READ statement. The READ statement initializes the variable with the value that you type.
+			Examples: read a, b, c ; read n;
+Counter-examples: read a+2;
+
+write <list_of_variables> or <expression>
+In order to WRITE a variable on the screen, you have to use a WRITE statement. The WRITE statement is used to display the results, usually on the computer's screen. The results can be variables OR expressions.
+			Examples: write a; write a+b; write a,b,c; write "simple"; write "a=",a; (the last one displays a= and a's value)
+Counter-example: there aren't (unless you happen to mistype "write").
+
+if <condition> then
+<instructions_1> 
+else
+<instructions_2>
+endif
+OR
+if <condition> then
+<instructions>
+endif
+where <condition> is a logical expression.
+If <condition> is true, <instructions_1> are execute. If <condition> is false, then in the 1st for, <instructions_2> are executed, while in the second nothing is done.
+			Examples:
+			if a>b then
+			max<-a
+			else
+			max<-b
+			endif
+Counter-examples: if a<-2 then a+5; (what's beyond then or else should be written on the next line; also, a+5 is not a valid statement, it should be a<-a+5)
+
+while <condition> do
+<instructions>
+endwhile
+where <condition> is a logical expression.
+How it works: <condition> is evaluated, if it is true, <instructions> are executed and <condition> is evaluated again. When <condition> becomes false, <instructions> no longer get executed and the WHILE loop stops.
+Thus, WHILE executes <instructions> as long as <condition> is true. Also, during the execution, at least one of the variables that make up <condition> need to change their value as for <condition> to become false at one point (if not, the loop never end and the program becomes faulty). Also, if, at the beginning, <condition> is false, then <instructions> don't get executed at all.
+
+for c = iv, fv [,step] execute
+<instructions>
+endfor
+Executes the code inside <instructions> for a specific number of times.
+How it works: (the default step is 1)
+1: the counter variable c is initialized with the value iv
+2: evaluates if c <= vf; if yes it goes to step 3, else the for loop ends.
+3: executes <instructions>, increments the counter c and goes on with step 2
+Mentions:
+The counter c goes only through the integer values in the interval
+If the step is 1, the <instructions> will be executed fv-iv+1 times.
+
+repeat
+<instructions>
+until <condition>
+How it works:
+1. <instructions> are executed
+2. <condition> is evaluated, and, if false, <instructions> are executed again. After, <condition> is evaluated again and the 2nd step is begun again. When <condition> becomes false, the loop ends.
+Thus, <instructions> get executed at least once, no matter the <condition>. Also, just like the WHILE loop, during the execution, at least one of the variables that make up <condition> need to change their value as for <condition> to become false at one point (if not, the loop never end and the program becomes faulty).

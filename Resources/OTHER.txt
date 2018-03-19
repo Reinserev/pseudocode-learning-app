@@ -1,0 +1,122 @@
+lire
+ecrire
+declarer
+assignant
+si
+puis
+autre
+pour
+tandis que
+faire
+repeter / jusqu'a ce que
+fin.si
+fin.tandis que
+fin.pour
+
+Bienvenue a Pseudocode Learning Companion
+Veuillez selectionner une option:
+Traducteur
+Environnement d'apprentissage
+Constructeur
+code de Checker
+Aidez-moi
+Programme faite en utilisant Visual C # 2015
+Copyright (c) 2015 Catalin Popa
+
+Traduire maintenant!
+Verifiez maintenant !
+Selectionnez l'instruction que vous souhaitez apprendre
+Declaration generale: (attention ecrire une seule instruction, en utilisant la syntaxe donnee!)
+Afficher les details
+Cacher les details
+Merci d'utiliser mon programme. J'espere que cela a ete utile et que vous savez maintenant beaucoup plus sur Pseudocode!
+Ouvrez la galerie
+schema suivant
+schema precedent
+Attention! Seulement la syntaxe donnee a l'Environnement d'Apprentissage est supportee.
+
+Naturel
+entier
+rationnel
+real
+
+Quelque chose semble avoir tort. Portez une grande attention a la syntaxe. Passez en revue votre code et essayez a nouveau!
+C'est correct!
+
+Attention !!
+Est-ce que vous utilisez ce programme pour la premiere fois?
+Lire attentivement ou ne prennent pas la peine d'utiliser ce programme. Ça va etre utile si et seulement si vous aidez en lisant attentivement la section d'aide avant de se confondre. Entendu?
+Apres avoir lu les instructions, fermez la fenetre d'aide et de commencer avec l'environnement d'apprentissage pour le moment. D'accord?
+La premiere ligne qui contient des erreurs est:
+
+Le TRADUCTEUR permet la traduction de (correctement ecrit!) Pseudocode dans un langage de programmation de votre choix (C ++ ou Pascal). Il suffit de copier et coller votre code (ou ouvrir un fichier texte) dans le volet gauche et appuyez sur le TRADUIRE MAINTENANT! Bouton. Le code traduit apparaîtra dans le volet de droite, que vous pouvez ensuite enregistrer dans un fichier texte.
+L'environnement d'apprentissage vous permet d'apprendre les sept instructions de pseudocode rapidement et facilement. Il suffit de cliquer sur le bouton de l'instruction souhaitee il vous tout ce que vous devez savoir pour maîtriser le montrer.
+Le CONSTRUCTEUR vous permet de construire un programme de pseudocode vous. Il suffit de cliquer sur l'un des boutons d'instruction sept pour ajouter l'instruction souhaitee a votre programme (ne vous inquietez pas, il ne vous laissera pas faire des erreurs!).
+Le CODE CHECKER vous permet de verifier si votre code a ete correctement ecrit, et le point de toutes les erreurs que vous avez faites sur. Il suffit de copier et coller votre code (ou ouvrir un fichier texte) dans le volet, et appuyez sur CHECK MAINTENANT! Bouton.
+La section HELP vous permet de visualiser les contenus d'aide.
+
+<Variable_type> <list_of_variables>;
+Pour declarer une variable, vous devez indiquer son type de donnees (naturel, entier, rationnel ou reel) et son nom. Pour declarer plusieurs variables avec le meme type en utilisant une seule instruction simplement les separer par des virgules (,).
+Exemples: un naturel; c reel; b rationnelle, d;
+Contre-exemples: un naturel; b entier d; (Ils ne respectent pas la declaration generale et melanger les choses)
+
+<Nom_variable> <- <expression>
+Pour affecter une variable, vous devez indiquer son nom, utilisez l'operateur d'affectation (<-) et de l'etat de ce que vous voulez assigner avec. L'expression que vous affectez la variable avec peut, bien sur, inclure d'autres variables.
+Exemples: a <-5; b <-a + 5; x1 <- (a + b) / 2;
+Contre-exemple: a + 5 <-2; (Il n'y a pas une telle chose comme une variable avec le nom d'une expression que vous n'etes pas autorise a utiliser operandes - comme + - (), etc., au nom d'une variable)
+
+lire <variable_list>
+Pour lire une variable, vous devez utiliser une instruction READ. L'instruction READ initialise la variable avec la valeur que vous tapez.
+Exemples: lire a, b, c; lire n;
+Contre-exemples: lire un + 2;
+
+ecrire <list_of_variables> ou <expression>
+Pour ecrire une variable sur l'ecran, vous devez utiliser une instruction WRITE. L'instruction WRITE est utilise pour afficher les resultats, generalement sur l'ecran de l'ordinateur. Les resultats peuvent etre variables ou expressions.
+Exemples: ecrire un; ecrire un + b; ecrire a, b, c; ecrire «simple»; ecrire "a =", a; (La derniere affiche un = et la valeur a)
+Contre-exemple: il n'y a pas (sauf si vous arrive de mistype "ecrire").
+
+si <condition> alors
+<Instructions_1>
+autre
+<Instructions_2>
+fin si
+OU
+si <condition> alors
+<instructions>
+fin si
+ou <condition> est une expression logique.
+Si <condition> est vrai, <instructions_1> sont executer. Si <condition> est faux, puis dans le 1er pour, <instructions_2> sont executes, tandis que dans le second rien ne soit fait.
+Exemples:
+si a> b puis
+max <-a
+autre
+max <-b
+endif
+Contre-exemples: si un <-2 puis un + 5; (Ce qui est au-dela alors, ou bien doit etre ecrit sur la ligne suivante, egalement, un + 5 est pas une declaration valide, il doit etre un <-a + 5)
+
+tandis que <condition> do
+<instructions>
+endwhile
+ou <condition> est une expression logique.
+Comment ça marche: <condition> est evaluee, si elle est vraie, <instructions> sont executees et <condition> est evalue a nouveau. Lorsque <condition> devient fausse, <instructions> ne sont executees et la boucle while arrete.
+Ainsi, while <instructions> tant que <condition> est vrai. En outre, lors de l'execution, au moins l'une des variables qui composent <condition> besoin de changer leur valeur pour <condition> pour devenir fausse a un moment donne (sinon, la boucle ne se terminent jamais et le programme devient defectueux). En outre, si, au debut, <condition> est fausse, alors <instructions> ne sont pas executes du tout.
+
+pour c = iv, fv [etape] executer
+<instructions>
+endfor
+Execute le code a l'interieur <instructions> pour un certain nombre de fois.
+Comment ça marche: (l'etape par defaut est 1)
+1: la variable compteur c est initialise avec la valeur iv
+2: evaluer si c <= vf; si oui, il passe a l'etape 3, sinon le a des fins de boucle.
+3: execute <instructions>, incremente le compteur c et passe a l'etape 2
+Mentions:
+Le compteur c va seulement a travers les valeurs entieres dans l'intervalle
+Si l'etape est 1, les <instructions> sera execute fv-iv + 1 fois.
+
+repeter
+<instructions>
+jusqu'a <condition>
+Comment cela fonctionne:
+1. <instructions> sont executees
+2. <condition> est evaluee et, si faux, <instructions> sont executees a nouveau. Apres, <condition> est evalue a nouveau et la 2eme etape est recommencee. Lorsque <condition> devient fausse, la boucle se termine.
+Ainsi, <instructions> sont executees au moins une fois, peu importe la <condition>. Aussi, tout comme la boucle WHILE, pendant l'execution, au moins l'une des variables qui composent <condition> besoin de changer leur valeur pour <condition> pour devenir fausse a un moment donne (sinon, la boucle ne se terminent jamais et programme devient defectueux).
