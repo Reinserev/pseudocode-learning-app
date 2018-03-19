@@ -1,0 +1,18 @@
+cin>>
+cout<<
+{
+}
+unsigned int
+int
+float
+float
+ ==
+ !=
+ /
+ %
+ &&
+ ||
+ !
+ =
+ do
+ while

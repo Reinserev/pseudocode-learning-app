@@ -1,0 +1,122 @@
+﻿citeste
+scrie
+declara
+atribuire
+daca
+atunci
+altfel
+pentru
+cat timp
+executa
+repeta/pana cand
+sf.daca
+sf.cat timp
+sf.pentru
+
+Bun venit in Pseudocode Learning Companion
+Selecteaza optiunea dorita:
+Traducator
+Mediu de invatare
+Builder
+Verificator de cod
+Ajutor
+Program realizat in Visual C# 2015
+Copyright (c) 2015 Catalin Popa
+
+Tradu acum !
+Verifica acum !
+Selecteaza instructiunea pe care doresti sa o inveti.
+Forma generala: (atentie! se scrie o singura instructiune, numai in sintaxa prezentata)
+Arata detalii
+Ascunde detalii
+Mulțumesc pentru utilizare! Sper că am fost de ajutor și că acum știi mai multe despre pseudocod !
+Deschide galerie
+Următoarea schemă
+Schema anterioară
+ATENTIE! Numai sintaxa prezentata in cadrul Mediului de Invatare este acceptata.
+
+natural
+intreg
+rational
+real
+
+Ceva nu pare să fie corect. Ai grija mai ales la sintaxa instructiunilor. Revezi-ți codul și încearcă din nou!
+Este corect!
+
+Atentie !!
+Folosesti programul acesta pentru prima data ?
+Neapărat să citești, dacă nu să nu te mai străduiești. Programul te ajută numai dacă îl ajuți și tu pe el. Așa că fă bine și citește cu atenție secțiunea de AJUTOR înainte să devii confuz. Înțeles ?
+După ce ai citit instrucțiunile de utilizare, închide fereastra de ajutor și intră, pentru început, pe MEDIUL DE ÎNVĂȚARE.
+Prima linie care conține greșeli este:
+
+TRADUCATORUL iti permite sa traduci cod scris (corect!) in pseudocod intr-un limbaj de programare la alegere (C++ sau Pascal). Doar copiaza si lipeste codul tau (sau deschide-l dintr-un fisier text) in panoul din stanga si apasa pe butonul TRADU ACUM!. Codul tradus va aparea in panoul din dreapta, pe care-l poti salva ulterior tot ca fisier text.
+MEDIUL DE INVATARE iti permite sa inveti cele 7 instructiuni ale pseudocodului rapid si usor. Doar apasa pe butonul aferent instructiunii dorite si voi afla tot ceea ce trebui sa stii pentru a o stapani.
+BUILDER-UL iti permite sa construiesti singur un program in pseudocod. Doar apasa pe una dintre cele 7 instructiuni pe care doresti sa o adaugi programului tau (nu-ti face griji, nu-ti va da voie sa faci greseli!).
+VERIFICATORUL DE COD iti permite sa verifici daca codul tau a fost scris corect, si iti va arata orice eroare ai facut. . Doar copiaza si lipeste codul tau (sau deschide-l dintr-un fisier text) in panou, si apasa butonul VERIFICA ACUM!.
+Sectiunea AJUTOR iti permite sa vezi continutul de ajutor.
+
+<tipul_variabilei> <listă_de_variabile>;
+DECLARAȚIA este operația prin care se declară una sau mai multe variabile. Pentru a declara o variabilă, trebuie să numești tipul său de dată (natural, întreg, rațional sau real) și numele ei. Pentru a declara mai multe variabile de același tip într-o singură instrucțiune, pur și simplu separă-le printr-o virgulă (,).
+			Exemple: natural a; real c; rațional b, d;
+Contra-exemplu: a natural; b întreg d; (nu respectă forma generală, încurcând oalele).
+
+<nume_variabilă> ← <expresie>
+ATRIBUIREA este operația prin care o variabilă primește valoarea (rezultatul) unei expresii
+			Exemple: a<-5; b<-a+5; x1<-(a+b)/2;
+Contra-exemplu: a+5<-2; (nu există variabile care să aibă numele similar cu o expresie, deoarece nu ai voie să folosești operatori - precum + - () etc în numele unei variabile)
+
+citeste <lista_de_variabile>
+CITIREA inițializează variabilele specificate cu valori introduse de la tastatură sau alt dispozitiv periferic al calculatorului.
+			Exemple: citește a, b, c ; citește n;
+Contra-exemplu: citește a+2;
+
+scrie <listă_de_variabile> sau <expresie>
+SCRIEREA se folosește pentru afișarea rezultatelor, de obicei pe ecranul calculatorului rezultatele pot fi valorile unor expresii sau variabile
+			Exemple: scrie a; scrie a+b; scrie a,b,c; scrie "simplu"; scrie "a=",a; (afișează a= și valoarea variabilei a)
+Contra-exemple: nu prea sunt. Asta dacă nu cumva tastezi greșit „scrie”.
+
+dacă <condiție> atunci
+<instrucţiuni_1>
+ altfel
+ <instrucţiuni_2>
+sf.dacă
+SAU
+dacă <condiție> atunci
+<instrucţiuni_1>
+sf.dacă
+<condiție> este o expresie logică.
+Mod de execuție: se evaluează <condiție> (unde <condiție> este o expresie logică) și dacă aceasta este adevărată se execută blocul de instrucțiuni <instrucţiuni_1>; dacă <condiție> este falsă atunci, în forma I, se execută blocul de instrucțiuni <instrucţiuni_2>, iar în forma II nu se mai execută nimic.
+			Exemple: 
+			dacă a>b atunci
+			max<-a
+			altfel
+			max<-b
+			sf.dacă
+Contra-exemplu: dacă a<-2 atunci a+5; (ce este dupa atunci sau dupa altfel se scrie pe o umrmatoarea linie; de asemenea, a+5 nu e o instructiune valida, ar trebui a<-a+5)
+
+cât timp <condiție> execută
+<instrucțiuni>
+sf.cât timp
+<condiție> este o expresie logică.
+Mod de execuție: se evaluează <condiție>; dacă este adevărată se execută <instrucțiuni> și se evaluează din nou <condiție>; dacă este adevărată se execută din nou <instrucțiuni> ş.a.m.d. În momentul în care <condiție> devine falsă <instrucțiuni> nu se mai execută și structura cât timp se sfârșește.
+Structura cât timp cere execuția repetată a secvenței <instrucțiuni>, atâta timp cât <condiție> este adevărată. De asemenea, anumite variabilele ce intervin în <condiție> trebuie să-și schimbe valoarea în <instrucțiuni>, astfel încât, la un moment dat, <condiție> să devină falsă. În caz contrar se produce o ciclare infinită a algoritmului.
+
+pentru c = vi , vf [,pas] execută
+<instrucțiuni>
+sf.pentru
+Execută secvența <instrucțiuni> de un număr determinat de ori.
+Mod de execuție (se consideră pasul implicit = 1): 
+1: - se inițializează contorul c cu valoarea vi;
+2: - se testează dacă c <= vf; dacă da se trece la etapa 3 iar dacă nu structura pentru se încheie;
+3: - se execută <instrucțiuni>, se incrementează contorul c și se reia execuția cu etapa 2.
+Observații:
+1.Contorul  - se consideră numai valorile întregi din acest interval.
+2.Dacă pasul de mărire a contorului este 1, secvența <instrucțiuni> se va executa de vf-vi+1 ori.
+
+repetă
+<instrucțiuni>
+până când <condiție>
+Mod de execuție: 
+1: - se execută <instrucțiuni>;
+2: - se testează<condiție> și dacă este falsă se execută din nou <instrucțiuni> și se reia pasul 2; în momentul în care <condiție> devine adevărată <instrucțiuni> nu se mai execută și structura repetă ... până când se sfârșește.
+Deoarece <condiție> apare după blocul <instrucțiuni>, acestea se vor executa cel puțin o dată și numai după aceea se va testa pentru prima dată <condiție>. De asemenea, anumite variabilele ce intervin în <condiție> trebuie să-și schimbe valoarea în <instrucțiuni>, astfel încât, la un moment dat, <condiție> să devină adevărată. În caz contrar se produce o ciclare infinită a algoritmului.
